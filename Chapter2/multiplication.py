@@ -13,7 +13,6 @@ def matrix_product(A, B):
 
 	Output
 	------
-	C
 	- A numpy array which equals to AB and is of shape
 	  m x p
 
@@ -41,7 +40,6 @@ def elementwise_product(A, B):
 
 	Output
 	------
-	C
 	- A numpy array of shape m x n, whose entries are the
 	  products of the corresponding entries of A and B.
 	"""
@@ -62,7 +60,6 @@ def dot_product(A, B):
 
 	Output
 	------
-	C
 	- A scalar which is the dot product of A and B.
 	"""
 	return matrix_product(A, B)
