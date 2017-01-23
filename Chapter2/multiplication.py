@@ -1,8 +1,8 @@
 import numpy as np
 
 def matrix_product(A, B):
-	"""Take two numpy arrays of the same shape and return
-	the product of them. 
+	"""Take two numpy arrays of the same shape 
+	and return the product of them. 
 
 	Input
 	-----
@@ -13,23 +13,20 @@ def matrix_product(A, B):
 
 	Output
 	------
-	- A numpy array which equals to AB and is of shape
-	  m x p
+	- A numpy array which equals to AB and is of shape m x p
 
-	For 2-D arrays it is equivalent to matrix
-	multiplication, and for 1-D arrays to inner product
-	of vectors (without complex conjugate). For N 
-	dimensions it is a sum product over the last axis of 
-	A and the second-to-last of B.
+	For 2-D arrays it is equivalent to matrix multiplication, 
+	and for 1-D arrays to inner product of vectors (without 
+	complex conjugate). For N dimensions it is a sum product 
+	over the last axis of A and the second-to-last of B.
 	"""
 	return np.dot(A, B)
 
 def elementwise_product(A, B):
-	"""Take two numpy arrays and return the 
-	elementwise-product(also known as Hadamard product) of 
-	them. If the two arrays are not of the same shape by 
-	accident, it will return A*B in terms of array 
-	broadcasting.
+	"""Take two numpy arrays and return the elementwise-product
+	(also known as Hadamard product) of them. If the two arrays 
+	are not of the same shape by accident, it will return A*B 
+	in terms of array broadcasting.
 
 	Input
 	-----
@@ -40,23 +37,23 @@ def elementwise_product(A, B):
 
 	Output
 	------
-	- A numpy array of shape m x n, whose entries are the
-	  products of the corresponding entries of A and B.
+	- A numpy array of shape m x n, whose entries are the 
+	products of the corresponding entries of A and B.
 	"""
 	return np.multiply(A, B)
 
 def dot_product(A, B):
-	"""Take two vectors(one-dimensional numpy arrays) and
-	return the dot product of them.
+	"""Take two vectors(one-dimensional numpy arrays) 
+	and return the dot product of them.
 
 	Input
 	-----
 	A
-	- A one dimensional numpy array which contains the 
-	  same number of entries.
+	- A one dimensional numpy array which contains 
+	the same number of entries.
 	B
-	- A one dimensional numpy array which contains the 
-	  same number of entries.
+	- A one dimensional numpy array which contains 
+	the same number of entries.
 
 	Output
 	------

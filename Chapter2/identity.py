@@ -6,12 +6,12 @@ def identity(n):
 	Input
 	-----
 	n
-	- an integer that indicates the dimension of the
-	identity matrix
+	- an integer that indicates the dimension of 
+	the identity matrix
 
 	Output
 	------
-	- A numpy array representation of n-dimensional
+	- A numpy array representation of n-dimensional 
 	identity matrix.
 	"""
 	return np.identity(n)
